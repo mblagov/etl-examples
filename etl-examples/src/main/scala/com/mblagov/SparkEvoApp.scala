@@ -25,4 +25,6 @@ object SparkEvoApp extends App {
     .mode("append")
     .option("path", "./employees")
     .saveAsTable("employees")
+
+  spark.sql("select * from employees").show(100)
 }

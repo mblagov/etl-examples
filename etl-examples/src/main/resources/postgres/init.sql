@@ -1,4 +1,4 @@
-create table public.employees (
+create table if not exists public.employees (
                                   id serial primary key ,
                                   name character varying(30) not null,
                                   department character varying(30) not null,
